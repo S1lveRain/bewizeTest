@@ -17,6 +17,13 @@
     "postinstall": "node bin/postinstall.js",
     "start": "node dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S1lveRain/bewizeTest.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "mcp",
     "telegram",
