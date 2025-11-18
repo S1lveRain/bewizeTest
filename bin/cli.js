@@ -9,7 +9,7 @@ const { spawn } = require('child_process');
 program
   .name('claude-telegram-mcp')
   .description('Telegram integration for Claude Code via MCP')
-  .version('1.0.2');
+  .version('1.0.4');
 
 program
   .command('install')
