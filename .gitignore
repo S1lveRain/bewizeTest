@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.config.json
+*.db
+*.sqlite
+.DS_Store
+

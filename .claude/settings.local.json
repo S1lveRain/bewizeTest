@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude-telegram-mcp test:*)",
+      "mcp__claude-telegram-mcp__get_telegram_messages",
+      "mcp__claude-telegram-mcp__send_telegram_message"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
