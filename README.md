@@ -162,6 +162,36 @@ node dist/index.js
 
 If you get a compilation error for `better-sqlite3` during dependency installation, this usually means issues with development tools.
 
+**Solution for Windows:**
+
+1. **Install Windows Build Tools** (recommended):
+   ```powershell
+   npm install --global windows-build-tools
+   ```
+   Or install manually:
+   - Download and install [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
+   - During installation, select "Desktop development with C++" workload
+   - Restart your computer after installation
+
+2. **Or use a Node.js version with precompiled binaries:**
+   ```powershell
+   nvm install 20
+   nvm use 20
+   npm install
+   ```
+   Node.js 18 or 20 usually have precompiled binaries available for `better-sqlite3`.
+
+3. **Try installing with prebuilt binaries:**
+   ```powershell
+   npm install --prefer-offline --no-audit
+   ```
+
+4. **After installing build tools, reinstall dependencies:**
+   ```powershell
+   Remove-Item -Recurse -Force node_modules, package-lock.json
+   npm install
+   ```
+
 **Solution for macOS:**
 
 1. **Install full Xcode from App Store** (recommended):
