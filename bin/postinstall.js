@@ -5,7 +5,7 @@ const path = require('path');
 const os = require('os');
 
 const packagePath = path.resolve(__dirname, '..');
-const mcpConfigPath = path.join(os.homedir(), '.cursor', 'mcp.json');
+const mcpConfigPath = path.join(os.homedir(), '.claude.json');
 const mcpConfigDir = path.dirname(mcpConfigPath);
 
 if (!fs.existsSync(mcpConfigDir)) {

@@ -9,7 +9,7 @@ const { spawn } = require('child_process');
 program
   .name('claude-telegram-mcp')
   .description('Telegram integration for Claude Code via MCP')
-  .version('1.0.6');
+  .version('1.0.8');
 
 program
   .command('install')
@@ -72,7 +72,7 @@ program
         process.exit(1);
       }
 
-      const mcpConfigPath = path.join(os.homedir(), '.cursor', 'mcp.json');
+      const mcpConfigPath = path.join(os.homedir(), '.claude.json');
       const mcpConfigDir = path.dirname(mcpConfigPath);
 
       if (!fs.existsSync(mcpConfigDir)) {
