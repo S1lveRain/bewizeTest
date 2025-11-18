@@ -1,19 +1,11 @@
 {
   "name": "@s1lverain/claude-telegram-mcp",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Telegram integration for Claude Code via MCP (Model Context Protocol)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
     "claude-telegram-mcp": "./bin/cli.js"
-  },
-  "mcp": {
-    "servers": {
-      "claude-telegram-mcp": {
-        "command": "node",
-        "args": ["./dist/index.js"]
-      }
-    }
   },
   "scripts": {
     "build": "tsc && npm run fix-imports",
@@ -22,6 +14,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "prepublishOnly": "npm run build",
+    "postinstall": "node bin/postinstall.js",
     "start": "node dist/index.js"
   },
   "keywords": [

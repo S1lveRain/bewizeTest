@@ -12,7 +12,7 @@ import { TelegramBotService } from '../telegram/telegramBot';
 import { EventEmitter } from 'events';
 
 const SERVER_NAME = 'claude-telegram-mcp';
-const SERVER_VERSION = '1.0.4';
+const SERVER_VERSION = '1.0.6';
 const QUEUE_PROCESSING_INTERVAL = 500;
 const DEFAULT_MESSAGE_COUNT = 10;
 const MESSAGE_PREVIEW_LENGTH = 50;
